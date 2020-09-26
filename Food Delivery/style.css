@@ -1,0 +1,270 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+header::before{
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2016/04/19/21/30/strawberries-1339969_960_720.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+/* Navigation Bar */
+.nav::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.3;
+}
+.nav{
+    display: flex;
+}
+.nav ul{
+    display: flex;   
+    position: absolute;
+    right: 25px;
+}
+.nav img{
+    position: absolute;
+    height: 47px;
+    width: 77px;
+    left: 20px;
+}
+.h2{
+    cursor: context-menu;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: #dee9ff;
+    position: absolute;
+    top: 37px;
+    margin: 10px;
+}
+.nav li{ 
+    list-style: none;
+    margin: 20px 10px;
+    height: 25px;
+}
+.nav-items a{
+    font-size: 19px;
+    color: white;
+    font-family: cursive;
+    margin: 10px 3px;
+    text-decoration: none;
+}
+.nav li a:hover{
+    color: tomato;
+}
+/* Home Section */
+.home-container{
+    padding: 20px;
+    /* border: 2px solid white; */
+    display: flex;
+    position: absolute;
+    top: 7rem;
+    height: 82vh;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.primary-h1{
+    font-family: monospace;
+    font-size: 4rem;
+    margin: 20px;
+    font-weight: bold;
+    cursor: context-menu;
+}
+.home-container p{
+    font-family: cursive;
+    font-size: 18px;
+    cursor: context-menu;
+}
+.btn{
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: tomato;
+    height: 44px;
+    width: 89px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: tomato;
+    transition: 0.4s ease-in-out;
+}
+/* Service Section */
+#service-container{
+    background-color: rgb(238, 169, 169);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column; 
+    position: absolute;
+    top: 100%;
+    align-items: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(216, 113, 113);
+    background-color: rgb(206, 195, 193);
+    height: 300px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 22px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box img{
+    border-radius: 10px;
+    height: 144px;
+    width: 169px;
+}
+.h2-primary{
+    font-family: serif;
+    color: black;
+    font-size: 32px;
+}
+.box p{
+    color: black;
+}
+#service-item{
+    display: flex;
+    flex-direction: row;
+    margin: auto 10px;
+}
+#service-heading{
+    margin-top: auto;
+    font-family: monospace;
+    color: black;
+}
+
+/* Clients Section */
+
+#clients-container{
+    background-color: rgb(186 232 255);
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    top: 200%;
+    flex-direction: column;
+    align-items: center;
+}
+#client-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+#clients-container h2{
+    margin-top: auto;
+    font-size: 64px;
+    font-family: monospace;
+    color: #535353;
+    cursor: context-menu;
+}
+#clients-container img{
+    height: 250px;
+    width: 250px;
+    margin: 30px;
+}
+/* Contact Section */
+
+#contact-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    top: 300%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#contact-container::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("images/contact-us-4193523.jpg") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.2;
+}
+#contact-container h2{
+    font-size: 64px;
+    font-family: monospace;
+    color: white;
+    cursor: context-menu;
+}
+#contactform{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 50%;
+    padding: 30px;
+}
+#contactform label{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+}
+.form-item{
+    font-size: 30px;
+
+}
+input{
+    border: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height:40px;
+}
+#contactform textarea{
+    border: 1px solid black;
+    width: 100%;
+    color: black;
+    font-size: 20px;
+}
+#submit{
+    position: relative;
+    width: 50%;
+    left: 140px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: tomato;
+}
+
+/* Footer Section */
+
+footer{
+    position: absolute;
+    top: 400%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: context-menu;
+}
